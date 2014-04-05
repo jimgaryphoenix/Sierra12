@@ -1,0 +1,17 @@
+﻿
+
+<viewdata model="ContactViewModel" />
+
+<div class="span-6">&nbsp;</div>
+<div class="span-10 coverBar">
+
+    <h3>Contact</h3>
+
+        <div class="span-9 last">
+			${Model.ThankYouMessage}
+        </div>
+
+</div>
+<div class="span-8 last">&nbsp;</div>
+
+<div class="span-24 last">&nbsp;</div>

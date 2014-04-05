@@ -1,0 +1,39 @@
+
+
+***********Host Info***********
+
+CustomerId: 595325
+
+Production Directory: D:\inetpub\progressten
+
+SMTP: maila2.webcontrolcenter.com
+
+db Server: SQLB34.webcontrolcenter.com
+
+Email Addresses:
+	Admin:		abovethebeast@progressten.com
+	Info:		info@progressten.com
+	ContactPage:	contact@progressten.com
+	Sales:		sales@progressten.com
+	Log4Net Errors:	errorReport@progressten.com
+
+
+
+***********Sql Connection***********
+
+SQLB34.webcontrolcenter.com
+P10Prod
+Sc0re-20
+
+
+
+***********ReCaptcha***********
+
+Domain Name:	progressten.com
+This is a global key. It will work across all domains.
+
+Public Key:	6Lc2Hr8SAAAAAJMKUURGdaNS6b0HoS7HRs767PoE
+Use this in the JavaScript code that is served to your users
+
+Private Key:	6Lc2Hr8SAAAAAB_GYq_C-n4aos5zThmhN-eFJgXZ
+Use this when communicating between your server and our server. Be sure to keep it a secret.

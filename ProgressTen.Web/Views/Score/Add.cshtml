@@ -1,0 +1,142 @@
+﻿
+@inherits System.Web.Mvc.WebViewPage<ProgressTen.Infrastructure.ViewModels.ScoreViewModel>
+			  
+@section Menu{
+
+	@Html.Partial("_logoutMenu")
+
+}
+<script src="@("http://" + Request.Url.Authority + "/Content/Scripts/jquery.ui.core.js")" type="text/javascript"></script>
+<script src="@("http://" + Request.Url.Authority + "/Content/Scripts/jquery.ui.position.js")" type="text/javascript"></script>
+<script src="@("http://" + Request.Url.Authority + "/Content/Scripts/jquery.ui.widget.js")" type="text/javascript"></script>
+<script src="@("http://" + Request.Url.Authority + "/Content/Scripts/jquery.ui.autocomplete.js")" type="text/javascript"></script>
+
+<script type="text/javascript" language="javascript">
+
+	$(document).ready(function () {
+		$("#driverName").focus();
+
+		$("#driverName").autocomplete({
+			minLength: 2,
+			source: function (request, response) {
+				var clubId = $("#ClubId").val();
+				var clubOnly;
+
+				if ($("#clubOnly").is(":checked")) {
+					clubOnly = true;
+				}
+				else {
+					clubOnly = false;
+				}
+
+				$.ajax({
+					url: "http://" + document.location.host + "/Ajax/GetDriverSuggest",
+					type: "POST",
+					dataType: "json",
+					data: { searchText: request.term, maxResults: 20, clubId: clubId, clubOnly: clubOnly },
+					success: function (data) {
+						response($.map(data, function (item) {
+							return { label: item.FullDisplayName, value: item.FullDisplayName, id: item.DriverId }
+						}))
+					}
+				})
+			},
+			select: function (event, ui) {
+				$("#DriverId").val(ui.item.id);
+			}
+		});
+	});
+
+	function changeCheck() {
+		$("#driverName").val("");
+		$("#driverName").focus();
+	}
+
+</script>
+
+<div class="span-2">&nbsp;</div>
+<div class="span-18 coverBar">
+
+	<h3>Add @(Model.ClassName) Scores to @(Model.EventName)</h3>
+
+	<div class="span-10 bold">
+		<div class="ui-widget">
+			Driver
+			&nbsp;&nbsp;
+			<input id="driverName" type="text" class="width160" />
+			&nbsp;&nbsp;&nbsp;
+			<input id="clubOnly" type="checkbox" checked="checked" onchange="changeCheck()" />
+			&nbsp;
+			@(Model.ClubName + " drivers only")
+		</div>
+		<div>
+			@Html.ValidationMessageFor(m => m.DriverId)
+		</div>
+	</div>
+
+	<div class="span-8 last alignRight">
+		<a href="@("http://" + Request.Url.Authority + "/Driver/Add/Club/" + Model.ClubId + "/Event/" + Model.EventId + "/Class/" + Model.ClassId)">Create New Driver</a>
+	</div>
+
+	<div class="span-18 last">&nbsp;</div>
+
+	<div class="span-18 last bold">
+		@Model.ClassName
+	</div>
+
+	<div class="span-18 last">&nbsp;</div>
+
+	<div class="span-18 last">
+
+		@{ 
+			using (@Html.BeginForm("Add", "Score", FormMethod.Post))
+			{
+				@Html.HiddenFor(m => m.ClassId)
+				@Html.HiddenFor(m => m.ClubId)
+				@Html.HiddenFor(m => m.EventId)
+				@Html.HiddenFor(m => m.DriverId)
+				@Html.HiddenFor(m => m.NumberOfCourses)
+				@Html.HiddenFor(m => m.EventName)
+
+				<table class="tableCenter">
+					<tr>
+						@{
+							for (int i = 0; i < Model.NumberOfCourses; i++)
+							{
+								<th align="center">
+									@("Course " + (i + 1).ToString())
+								</th>
+							}
+						}
+					</tr>
+					<tr>
+						@{
+							for (int i = 0; i < Model.NumberOfCourses; i++)
+							{
+								<td align="center">
+									<input type="text" name="@("Course_" + (i + 1) + "_Score")" class="scoreBox" />
+								</td>
+							}
+						}
+					</tr>
+				</table>
+
+				<div class="span-18 last ">&nbsp;</div>
+
+				<div class="span-18 last ">
+					@Html.ValidationMessageFor(m => m.ErrorMessage)&nbsp;
+				</div>
+
+				<div class="span-18 last">&nbsp;</div>
+
+				<div class="span-18 last center">
+					<input type="submit" value="Submit" />
+				</div>
+			}
+	  }
+
+	</div>
+
+</div>
+
+<div class="span-4 last">&nbsp;</div>

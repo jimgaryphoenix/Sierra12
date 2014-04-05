@@ -1,0 +1,64 @@
+﻿
+
+<viewdata model="ContactViewModel" />
+
+<div class="span-6">&nbsp;</div>
+<div class="span-10 coverBar">
+
+    <h3>Contact</h3>
+
+    <form action="Contact" method="post">
+
+        <div class="span-9">
+			!{Html.ValidationMessageFor(m => m.Name)}
+			<br />
+            !{Html.LabelFor(m => m.Name)}
+			<br />
+            !{Html.TextBoxFor(m => m.Name)}
+        </div>
+        <div class="span-1 last">&nbsp;</div>
+        
+        <div class="span-10 last">&nbsp;</div>
+
+        <div class="span-9">
+			!{Html.ValidationMessageFor(m => m.RccScreenName)}
+			<br />
+            !{Html.LabelFor(m => m.RccScreenName)}
+			<br />
+            !{Html.TextBoxFor(m => m.RccScreenName)}
+        </div>
+        <div class="span-1 last">&nbsp;</div>
+        
+        <div class="span-10 last">&nbsp;</div>
+
+        <div class="span-9">
+			!{Html.ValidationMessageFor(m => m.EmailAddress)}
+			<br />
+            !{Html.LabelFor(m => m.EmailAddress)}
+			<br />
+            !{Html.TextBoxFor(m => m.EmailAddress)}
+        </div>
+        <div class="span-1 last">&nbsp;</div>
+        
+        <div class="span-10 last">&nbsp;</div>
+
+        <div class="span-9">
+			!{Html.ValidationMessageFor(m => m.Comments)}
+			<br />
+            !{Html.LabelFor(m => m.Comments)}
+			<br />
+            !{Html.TextAreaFor(m => m.Comments)}
+        </div>
+        <div class="span-1 last">&nbsp;</div>
+        
+        <div class="span-10 last">&nbsp;</div>
+        
+        <div class="span-4">&nbsp;</div>
+        <div class="span-5"><input type="submit" value="Submit" /></div>
+        <div class="span-1 last">&nbsp;</div>
+    </form>
+
+</div>
+<div class="span-8 last">&nbsp;</div>
+
+<div class="span-24 last">&nbsp;</div>

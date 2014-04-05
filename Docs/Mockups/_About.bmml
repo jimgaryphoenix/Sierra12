@@ -1,0 +1,113 @@
+<mockup version="1.0" skin="sketch" measuredW="1116" measuredH="739" mockupW="1058" mockupH="703">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="132" y="130" w="315" h="79" measuredW="374" measuredH="120" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <src>./assets/HeaderLogo.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="48" y="26" w="1058" h="703" measuredW="450" measuredH="400" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>ProgressTen%20-%20About%0Ahttp%3A//ProgressTen/About</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Canvas" x="54" y="100" w="1045" h="600" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <color>0</color>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Canvas" x="97" y="112" w="950" h="557" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <color>16777215</color>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Image" x="470" y="112" w="-1" h="-1" measuredW="576" measuredH="120" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/headerCrawler.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Image" x="96" y="237" w="951" h="31" measuredW="5" measuredH="22" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/headerBarBg.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::HRule" x="112" y="639" w="920" h="-1" measuredW="100" measuredH="5" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Label" x="441" y="648" w="288" h="25" measuredW="282" measuredH="20" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Coyright@%202008%20-%202010%20ProgressTen%20All%20Rights%20Reserved</text>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::HRule" x="112" y="236" w="920" h="-1" measuredW="100" measuredH="5" zOrder="8" locked="false" isInGroup="-1"/>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::Label" x="596" y="238" w="36" h="25" measuredW="32" measuredH="23" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>_Info%26bm%3B_Info.bmml%26bm%3B_Info.bmml%26bm%3B_Info.bmml</href>
+        <size>12</size>
+        <text>Info</text>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::Label" x="675" y="238" w="42" h="25" measuredW="40" measuredH="23" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>12</size>
+        <text>About</text>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Label" x="750" y="238" w="55" h="25" measuredW="50" measuredH="23" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>_Contact%26bm%3B_Contact.bmml%26bm%3B_Contact.bmml%26bm%3B_Contact.bmml</href>
+        <size>12</size>
+        <text>Contact</text>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::Label" x="959" y="240" w="55" h="25" measuredW="34" measuredH="23" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>_Login%26bm%3B_Login.bmml%26bm%3B_Login.bmml%26bm%3B_Login.bmml</href>
+        <size>12</size>
+        <text>Login</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::Label" x="831" y="240" w="-1" h="-1" measuredW="101" measuredH="23" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>_RegisterClub%26bm%3B_RegisterClub.bmml%26bm%3B_RegisterClub.bmml%26bm%3B_RegisterClub.bmml</href>
+        <size>12</size>
+        <text>Setup%20Your%20Club</text>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::HRule" x="347" y="308" w="475" h="-1" measuredW="100" measuredH="5" zOrder="14" locked="false" isInGroup="-1"/>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::Label" x="347" y="308" w="-1" h="-1" measuredW="59" measuredH="23" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>12</size>
+        <text>About%20Us</text>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::Label" x="347" y="331" w="469" h="118" measuredW="3108" measuredH="20" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <bold>false</bold>
+        <color>0</color>
+        <size>10</size>
+        <text>ProgressTen.com%20started%20in%20December%202008%20when%20two%20members%20of%20RC%20Crawling%27s%20oldest%20club%20got%20to%20chatting%20and%20learned%20that%20they%20shared%20the%20same%20passion%20for%20thier%20work%20of%20software%20engineering.%20One%20was%20already%20working%20on%20a%20simple%20event%20management%20and%20scoring%20system%20for%20the%20local%20club%20and%20they%20shared%20thoughts%20and%20ideas%20for%20that%20project.%20A%20few%20months%20later%20the%20two%20were%20co-workers%20in%20the%20same%20office%20and%20ideas%20began%20to%20fly%20for%20a%20software%20system%20that%20could%20provide%20to%20the%20whole%20nation%2C%20the%20same%20benefits%20that%20the%20local%20club%20was%20enjoying.%20More%20ideals%2C%20more%20features%2C%20more%20capabilities%20were%20added%20as%20the%20discussions%20flowed.%20And%20thus%20was%20born%2C%20the%20site%20you%20see%20today.</text>
+      </controlProperties>
+    </control>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::Label" x="347" y="456" w="108" h="22" measuredW="80" measuredH="20" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <bold>false</bold>
+        <color>0</color>
+        <size>10</size>
+        <text>Jim%20Gary%20Bio%20.%20.%20.</text>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::Label" x="347" y="493" w="132" h="22" measuredW="117" measuredH="20" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <bold>false</bold>
+        <color>0</color>
+        <size>10</size>
+        <text>Alec%20Whittington%20Bio%20.%20.%20.</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

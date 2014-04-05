@@ -1,0 +1,75 @@
+﻿
+@inherits System.Web.Mvc.WebViewPage<ProgressTen.Infrastructure.ViewModels.SeriesViewModel>
+
+@section Menu{
+	@Html.Partial("_logoutMenu")
+}
+
+<script language="javascript" type="text/javascript">
+
+	$(document).ready(function () {
+		$(".datepicker").datepicker({ dateFormat: 'mm/dd/yy' });
+	});
+
+</script>
+
+<div class="span-4">&nbsp;</div>
+<div class="span-15 coverBar">
+
+    <h3>Edit Series</h3>
+
+    @using (Html.BeginForm("Edit", "Series", new { clubId = Model.Club.ClubId }, FormMethod.Post))
+	{
+		<div class="prepend-1 span-6">
+			@Html.ValidationMessageFor(m => m.Name)
+			<br />
+			@Html.LabelFor(m => m.Name, "Series Name")
+			<br />
+			@Html.TextBoxFor(m => m.Name, new { @class = "width180" })
+		</div>
+		
+		<div class="prepend-1 span-6 last">
+			@Html.ValidationMessageFor(m => m.BeginDate)
+			<br />
+			@Html.LabelFor(m => m.BeginDate, "Series Begin Date")
+			<br />
+			@Html.TextBox("BeginDate", Model.BeginDate.ToString("MM/dd/yyyy"), new { id = "BeginDate", @class = "datepicker width180" })
+		</div>
+		
+		<div class="prepend-1 span-12 last">
+			@Html.ValidationMessageFor(m => m.SelectedClasses)
+			<br />
+			@Html.LabelFor(m => m.SelectedClasses, "Classes Run In This Series")
+			<br />
+			@{
+//bool seriesStarted = Model.BeginDate <= DateTime.Now;
+
+foreach (var compClass in Model.AllClasses)
+{
+	bool isChecked = Model.SelectedClasses.Contains(compClass.ClassId);
+						
+					@*<input type="checkbox" name="SelectedClasses" value="@compClass.ClassId"@(isChecked ? " checked='checked'" : string.Empty)@(isChecked && seriesStarted ? " disabled='disabled'" : string.Empty) />@(" " + compClass.Name)*@
+					<input type="checkbox" name="SelectedClasses" value="@compClass.ClassId"@(isChecked ? " checked='checked'" : string.Empty) />@(" " + compClass.Name)
+					<br />
+					@compClass.Description
+					<br />
+					<br />
+}
+			}
+		</div>
+
+		<div class="span-11 last">&nbsp;</div>
+		<div class="span-11 last">&nbsp;</div>
+        
+		<div class="prepend-1 span-6 last">
+			@Html.HiddenFor(m => m.SeriesId)
+			@Html.HiddenFor(m => m.Club.ClubId)
+			<input type="submit" value="Update Series Information" />
+		</div>
+	}
+
+</div>
+<div class="span-3 last">&nbsp;</div>
+
+<div class="span-22 last">&nbsp;</div>
+<div class="span-22 last">&nbsp;</div>

@@ -1,0 +1,134 @@
+<mockup version="1.0" skin="sketch" measuredW="1116" measuredH="739" mockupW="1058" mockupH="703">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="132" y="130" w="315" h="84" measuredW="374" measuredH="120" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <src>./assets/HeaderLogo.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="48" y="26" w="1058" h="703" measuredW="450" measuredH="400" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>ProgressTen%0Ahttp%3A//ProgressTen.com</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Canvas" x="54" y="100" w="1045" h="600" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <color>0</color>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Canvas" x="97" y="112" w="950" h="557" measuredW="100" measuredH="70" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <color>16777215</color>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Image" x="470" y="112" w="-1" h="-1" measuredW="576" measuredH="120" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/headerCrawler.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Image" x="96" y="237" w="951" h="31" measuredW="5" measuredH="22" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/headerBarBg.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::HRule" x="112" y="639" w="920" h="-1" measuredW="100" measuredH="5" zOrder="7" locked="false" isInGroup="-1"/>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Label" x="441" y="648" w="288" h="25" measuredW="282" measuredH="20" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Coyright@%202008%20-%202010%20ProgressTen%20All%20Rights%20Reserved</text>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::HRule" x="112" y="236" w="920" h="-1" measuredW="100" measuredH="5" zOrder="9" locked="false" isInGroup="-1"/>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::HRule" x="112" y="318" w="920" h="-1" measuredW="100" measuredH="5" zOrder="10" locked="false" isInGroup="-1"/>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::Label" x="112" y="323" w="-1" h="-1" measuredW="89" measuredH="23" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>12</size>
+        <text>National%20News</text>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::HRule" x="111" y="449" w="920" h="-1" measuredW="100" measuredH="5" zOrder="12" locked="false" isInGroup="-1"/>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::Label" x="111" y="454" w="-1" h="-1" measuredW="154" measuredH="23" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>12</size>
+        <text>Upcoming%20National%20Events</text>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::Label" x="596" y="238" w="36" h="25" measuredW="32" measuredH="23" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>_Info%26bm%3B_Info.bmml%26bm%3B_Info.bmml%26bm%3B_Info.bmml</href>
+        <size>12</size>
+        <text>Info</text>
+      </controlProperties>
+    </control>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::Label" x="675" y="238" w="42" h="25" measuredW="40" measuredH="23" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>_About%26bm%3B_About.bmml%26bm%3B_About.bmml%26bm%3B_About.bmml</href>
+        <size>12</size>
+        <text>About</text>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::Label" x="750" y="238" w="55" h="25" measuredW="50" measuredH="23" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>_Contact%26bm%3B_Contact.bmml%26bm%3B_Contact.bmml%26bm%3B_Contact.bmml</href>
+        <size>12</size>
+        <text>Contact</text>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::Label" x="959" y="240" w="55" h="25" measuredW="34" measuredH="23" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>_Login%26bm%3B_Login.bmml%26bm%3B_Login.bmml%26bm%3B_Login.bmml</href>
+        <size>12</size>
+        <text>Login</text>
+      </controlProperties>
+    </control>
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::Label" x="831" y="240" w="-1" h="-1" measuredW="101" measuredH="23" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>_RegisterClub%26bm%3B_RegisterClub.bmml%26bm%3B_RegisterClub.bmml%26bm%3B_RegisterClub.bmml</href>
+        <size>12</size>
+        <text>Setup%20Your%20Club</text>
+      </controlProperties>
+    </control>
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::Label" x="132" y="346" w="897" h="15" measuredW="552" measuredH="20" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <bold>false</bold>
+        <color>0</color>
+        <size>10</size>
+        <text>9/12/2010%20-%20Congratulations%20to%20all%20who%20participated%20in%20the%202010%20USRCCA%20Nationals%20at%20Disney%2C%20OK.%20Check%20the%20%3Cresults%3E.</text>
+      </controlProperties>
+    </control>
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::Label" x="132" y="365" w="897" h="15" measuredW="175" measuredH="20" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <bold>false</bold>
+        <color>0</color>
+        <size>10</size>
+        <text>9/1/2010%20-%20ProgressTen.com%20is%20LIVE%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::Label" x="132" y="477" w="897" h="15" measuredW="230" measuredH="20" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <bold>false</bold>
+        <color>0</color>
+        <size>10</size>
+        <text>11/22/2010%20-%20Vanquish%20Rocas%20Rojo%2C%20Red%20Rocks%2C%20CO</text>
+      </controlProperties>
+    </control>
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::Canvas" x="97" y="112" w="950" h="557" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <color>16777215</color>
+      </controlProperties>
+    </control>
+    <control controlID="54" controlTypeID="com.balsamiq.mockups::Label" x="675" y="238" w="42" h="25" measuredW="40" measuredH="23" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>_About%26bm%3B_About.bmml%26bm%3B_About.bmml%26bm%3B_About.bmml</href>
+        <size>12</size>
+        <text>About</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

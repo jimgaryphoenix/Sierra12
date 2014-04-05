@@ -1,0 +1,87 @@
+﻿
+@inherits System.Web.Mvc.WebViewPage<ProgressTen.Infrastructure.ViewModels.EventViewModel>
+
+@section Menu{
+	@Html.Partial("_logoutMenu")
+}
+
+<script language="javascript" type="text/javascript">
+
+	$(document).ready(function () {
+		$(".datepicker").datepicker({ dateFormat: 'mm/dd/yy' });
+	});
+
+</script>
+
+<div class="span-5">&nbsp;</div>
+<div class="span-10 coverBar">
+
+    <h3>Create New Event</h3>
+
+    @using(Html.BeginForm("Add", "Event", new { clubId = Model.ClubId }, FormMethod.Post))
+	{
+		<div class="prepend-2 span-6 last">
+			@Html.ValidationMessageFor(m => m.Name)
+			<br />
+			@Html.LabelFor(m => m.Name, "Event Name")
+			<br />
+			@Html.TextBoxFor(m => m.Name, new { @class = "width180" })
+		</div>
+		
+		<div class="prepend-2 span-6 last">
+			@Html.ValidationMessageFor(m => m.Date)
+			<br />
+			@Html.LabelFor(m => m.Date, "Event Date")
+			<br />
+			@Html.TextBox("Date", Model.Date.ToString("MM/dd/yyyy"), new { id = "Date", @class = "datepicker width180" })
+		</div>
+		
+		@*@{
+			if(Model.SeriesId == null)
+			{
+				<text></text>
+			}
+			else
+			{*@
+				<div class="prepend-2 span-6 last">
+					@Html.ValidationMessageFor(m => m.EventTypeId)
+					<br />
+					@Html.LabelFor(m => m.EventTypeId, "Event Type")
+					<br />
+					Local
+					@Html.HiddenFor(m => m.EventTypeId)
+				</div>
+		//    }
+		//}
+		
+		<div class="prepend-2 span-6 last">
+			@Html.ValidationMessageFor(m => m.LocationId)
+			<br />
+			@Html.LabelFor(m => m.LocationId, "Location")
+			<br />
+			@Html.DropDownListFor(m => m.LocationId, Model.Locations, new { @class = "width180" } )
+		</div>
+		
+		<div class="prepend-2 span-7 last">
+			@Html.ValidationMessageFor(m => m.NumberOfCourses)
+			<br />
+			@Html.LabelFor(m => m.NumberOfCourses, "Number Of Courses")
+			<br />
+			@Html.TextBoxFor(m => m.NumberOfCourses, new { @class = "width40" })
+			&nbsp;(including finals course if applicable)
+		</div>
+		
+		<div class="span-11 last">&nbsp;</div>
+		<div class="span-11 last">&nbsp;</div>
+        
+		<div class="prepend-2 span-6 last">
+			@Html.HiddenFor(m => m.SeriesId)
+			@Html.HiddenFor(m => m.ClubId)
+			<input type="submit" value="Submit" />
+		</div>
+	}
+
+</div>
+<div class="span-5 last">&nbsp;</div>
+
+<div class="span-24 last">&nbsp;</div>

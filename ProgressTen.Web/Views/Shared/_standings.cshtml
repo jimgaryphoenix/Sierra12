@@ -1,0 +1,73 @@
+﻿
+@inherits System.Web.Mvc.WebViewPage<ProgressTen.Infrastructure.ViewModels.DisplayClubViewModel>
+
+<div class="span-20 last">
+
+	<div class="prepend-1 span-19 append-1 last">
+	@{
+		if(Model.CurrentSeriesStandings == null || Model.CurrentSeriesStandings.Standings == null)
+		{
+			@("No results have yet been added to this series")
+		}
+		else
+		{
+			foreach (var standingsGroup in Model.CurrentSeriesStandings.Standings)
+			{
+				<div class="span-18 last coverBar">
+					@(standingsGroup.ClassName)
+				</div>
+	 
+				<div class="span-18 last">
+					<table>
+						<tr>
+							<th>
+								Place
+							</th>
+							<th>
+								Driver Name
+							</th>
+							<th>
+								Total Points
+							</th>
+						</tr>
+						@{
+							int placeCounter = 0;
+
+							if(standingsGroup.StandingsItems == null)
+							{
+								<tr>
+									<td>
+										@("No results have yet been added for this class")
+									</td>
+								</tr>
+							}
+							else
+							{
+								foreach (var item in standingsGroup.StandingsItems.OrderByDescending(r => r.TotalPoints))
+								{
+									<tr>
+										<td>
+											@(++placeCounter)
+										</td>
+										<td>
+											@item.Driver.FullDisplayName
+										</td>
+										<td>
+											@item.TotalPoints
+										</td>
+									</tr>
+								}
+							}
+						}
+					</table>
+				</div>
+	 
+				<div class="span-18 last">&nbsp;</div>
+			}
+		}
+	}
+	</div>
+	
+	<div class="span-20 last">&nbsp;</div>
+	<div class="span-20 last">&nbsp;</div>
+</div>

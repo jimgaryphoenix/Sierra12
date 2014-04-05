@@ -1,0 +1,113 @@
+﻿
+@inherits System.Web.Mvc.WebViewPage<ProgressTen.Infrastructure.ViewModels.DisplayClubViewModel>
+
+<div class="span-20 last">
+
+	<div class="prepend-1 span-18 last">
+		Select Event:&nbsp;
+		<select id="SelectedEvent" onchange="changeResults(@(Model.Club.ClubId))">
+		@{
+			if(Model.CurrentSeries != null && Model.CurrentSeries.Events.Count > 0)
+			{
+				foreach(var comp in Model.CurrentSeries.Events.OrderBy(e => e.Date).ToList())
+				{
+					<option value="@comp.EventId"@(comp.EventId == Model.SelectedEvent.EventId ? " selected='selected'" : string.Empty)>@comp.Name</option>
+				}
+			}
+			else
+			{
+				<option value="-1">No Events Yet Added</option>
+			}
+		}
+		</select>
+		@{
+			if (Model.CurrentSeries != null && Model.CurrentSeries.Events.Count > 0 && (User.IsInRole("ClubAdmin_" + Model.Club.ClubId) || User.IsInRole("SiteAdmin")))
+			{
+				<text>&nbsp;&nbsp;</text>
+				<a href="@("http://" + Request.Url.Authority + "/Result/Edit/" + Model.SelectedEvent.EventId + "/Club/" + Model.Club.ClubId)">Edit Results</a>
+			}
+		}
+	</div>
+
+	<div class="prepend-1 span-19 append-1 last">
+	@{
+		if(Model.SelectedEventResults == null)
+		{
+			if (Model.CurrentSeries != null && Model.CurrentSeries.Events.Count == 0)
+			{
+				@("No events have yet been added to this series")
+			}
+			else
+			{
+				@("Results have not yet been entered for this event")
+			}
+		}
+		else
+		{
+			foreach (var resultGroup in Model.SelectedEventResults.Results)
+			{
+				<div class="span-18 last coverBar">
+					@(resultGroup.ClassName)
+				</div>
+	 
+				<div class="span-18 last">
+					<table>
+						<tr>
+							<th>
+								Place
+							</th>
+							<th>
+								Driver Name
+							</th>
+							@{
+								for(int i = 0; i < Model.SelectedEvent.NumberOfCourses; i ++)
+								{
+									<th>@("Course " + (i + 1))</th>
+								}
+							}
+							<th>
+								Total
+							</th>
+							<th>
+								Points Earned
+							</th>
+						</tr>
+						@{
+							int placeCounter = 0;
+					
+							foreach (var result in resultGroup.Results.OrderBy(r => r.TotalScore))
+							{
+								<tr>
+									<td>
+										@(++placeCounter)
+									</td>
+									<td>
+										@result.Driver.FullDisplayName
+									</td>
+									@{
+										foreach (var score in result.Scores.OrderBy(s => s.CourseNumber))
+										{
+											<td>@score.CourseScore</td>
+										}
+									}
+									<td>
+										@result.TotalScore
+									</td>
+									<td>
+										@result.PointsEarned
+									</td>
+								</tr>
+							}
+						}
+					</table>
+				</div>
+	 
+				<div class="span-18 last">&nbsp;</div>
+			}
+		}
+	}
+	</div>
+	
+	<div class="span-20 last">&nbsp;</div>
+	<div class="span-20 last">&nbsp;</div>
+</div>

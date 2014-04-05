@@ -1,0 +1,80 @@
+﻿
+@inherits System.Web.Mvc.WebViewPage<ProgressTen.Infrastructure.ViewModels.ScoreViewModel>
+			  
+@section Menu{
+
+	@Html.Partial("_logoutMenu")
+
+}
+
+<div class="span-2">&nbsp;</div>
+<div class="span-18 coverBar">
+
+	<h3>Edit @(Model.ClassName) Scores for @(Model.EventName)</h3>
+
+	<div class="span-18 last bold">
+		@Model.Result.Driver.FullDisplayName
+	</div>
+
+	<div class="span-18 last">&nbsp;</div>
+
+	<div class="span-18 last bold">
+		@Model.ClassName
+	</div>
+
+	<div class="span-18 last">&nbsp;</div>
+
+	<div class="span-18 last">
+
+		@{ 
+			using (@Html.BeginForm("Edit", "Score", FormMethod.Post))
+			{
+				@Html.HiddenFor(m => m.ClassId)
+				@Html.HiddenFor(m => m.ClubId)
+				@Html.HiddenFor(m => m.EventId)
+				@Html.HiddenFor(m => m.DriverId)
+				@Html.HiddenFor(m => m.NumberOfCourses)
+				@Html.HiddenFor(m => m.EventName)
+
+				<table class="tableCenter">
+					<tr>
+						@{
+							for (int i = 0; i < Model.NumberOfCourses; i++)
+							{
+								<th align="center">
+									@("Course " + (i + 1).ToString())
+								</th>
+							}
+						}
+					</tr>
+					<tr>
+						@{
+							for (int i = 0; i < Model.NumberOfCourses; i++)
+							{
+								<td align="center">
+									<input type="text" name="@("Course_" + (i + 1) + "_Score")" class="scoreBox" value="@(Model.Result.GetCourseXScore(i + 1))" />
+								</td>
+							}
+						}
+					</tr>
+				</table>
+
+				<div class="span-18 last ">&nbsp;</div>
+
+				<div class="span-18 last ">
+					@Html.ValidationMessageFor(m => m.ErrorMessage)&nbsp;
+				</div>
+
+				<div class="span-18 last">&nbsp;</div>
+
+				<div class="span-18 last center">
+					<input type="submit" value="Submit" />
+				</div>
+			}
+	  }
+
+	</div>
+
+</div>
+
+<div class="span-4 last">&nbsp;</div>

@@ -1,0 +1,38 @@
+﻿
+@inherits System.Web.Mvc.WebViewPage<ProgressTen.Infrastructure.ViewModels.LocationViewModel>
+
+@section Menu{
+	@Html.Partial("_logoutMenu")
+}
+
+<div class="span-5">&nbsp;</div>
+<div class="span-10 coverBar">
+
+    <h3>Edit @Model.Name</h3>
+
+    @using(Html.BeginForm("Edit", "Location", new { clubId = Model.Club.ClubId }, FormMethod.Post))
+	{
+		<div class="prepend-1 span-5 last">
+			@Html.ValidationMessageFor(m => m.Url)
+			<br />
+			@Html.LabelFor(m => m.Url, "Map Page Url")
+			<br />
+			@Html.TextAreaFor(m => m.Url, new { @class = "width260 height100" })
+		</div>
+
+		<div class="span-11 last">&nbsp;</div>
+		<div class="span-11 last">&nbsp;</div>
+        
+		<div class="prepend-1 span-5 last">
+			@Html.HiddenFor(m => m.Name)
+			@Html.HiddenFor(m => m.LocationId)
+			@Html.HiddenFor(m => m.Club.ClubId)
+			<input type="submit" value="Submit" />
+		</div>
+
+    }
+
+</div>
+<div class="span-5 last">&nbsp;</div>
+
+<div class="span-24 last">&nbsp;</div>

@@ -1,0 +1,64 @@
+﻿
+@inherits System.Web.Mvc.WebViewPage<ProgressTen.Infrastructure.ViewModels.DisplayClubViewModel>
+
+<div class="span-22 last">
+
+	<div class="span-4">&nbsp;</div>
+
+	<div class="span-12 last coverBar">
+
+		@{
+			if(Model.CurrentSeries == null)
+			{
+				<text>No club Comp Series has been set up.</text>
+			}
+			else
+			{
+				<h4>@Model.CurrentSeries.Name</h4>
+
+				<div class="span-12 last">
+					<table class="width100pc" border="1px">
+						@{
+							foreach (var comp in Model.CurrentSeries.Events.OrderBy(e => e.Date).ToList())
+							{
+								<tr>
+									<td>
+										@comp.Date.ToString("MM/dd/yyyy")
+									</td>
+									<td>
+										@comp.Name
+									</td>
+									<td>
+										<a href="@(comp.Location.Url)" target="_blank">@comp.Location.Name</a>
+									</td>
+									<td>
+										@{
+											if ((User.IsInRole("ClubAdmin_" + Model.Club.ClubId) || User.IsInRole("SiteAdmin")))
+											{
+												<a href="@("http://" + Request.Url.Authority + "/Event/Edit/" + comp.EventId + "/Club/" + Model.Club.ClubId)">Edit</a>
+											}
+											else
+											{
+												<text>&nbsp;</text>
+											}
+										}
+									</td>
+								</tr>
+							}
+						}
+					</table>
+				</div>
+		
+				if ((User.IsInRole("ClubAdmin_" + Model.Club.ClubId) || User.IsInRole("SiteAdmin")))
+				{
+					<a href="@("http://" + Request.Url.Authority + "/Series/Edit/" + Model.CurrentSeries.SeriesId + "/Club/" + Model.Club.ClubId)">Edit Series Information</a>
+					<text>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</text>
+					<a href="@("http://" + Request.Url.Authority + "/Event/Add/" + Model.CurrentSeries.SeriesId + "/Club/" + Model.Club.ClubId)">Add Event</a>
+				}
+			}
+		}
+
+	</div>
+
+	<div class="span-20 last">&nbsp;</div>
+</div>

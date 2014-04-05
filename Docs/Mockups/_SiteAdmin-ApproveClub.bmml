@@ -1,0 +1,311 @@
+<mockup version="1.0" skin="sketch" measuredW="1447" measuredH="857" mockupW="1389" mockupH="821">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="132" y="130" w="315" h="79" measuredW="374" measuredH="120" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <src>./assets/HeaderLogo.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="48" y="26" w="1058" h="821" measuredW="450" measuredH="400" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>ProgressTen%20-%20Site%20Admin%0Ahttp%3A//ProgressTen/SiteAdmin</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Canvas" x="54" y="100" w="1045" h="718" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <color>0</color>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Canvas" x="97" y="112" w="950" h="679" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <color>16777215</color>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::Image" x="470" y="112" w="-1" h="-1" measuredW="576" measuredH="120" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/headerCrawler.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Image" x="96" y="237" w="951" h="31" measuredW="5" measuredH="22" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/headerBarBg.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::HRule" x="112" y="757" w="920" h="-1" measuredW="100" measuredH="5" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::Label" x="441" y="766" w="288" h="25" measuredW="282" measuredH="20" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Coyright@%202008%20-%202010%20ProgressTen%20All%20Rights%20Reserved</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Label" x="112" y="239" w="101" h="25" measuredW="85" measuredH="23" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>12</size>
+        <text>Welcome%2C%20Jim</text>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::HRule" x="112" y="236" w="920" h="-1" measuredW="100" measuredH="5" zOrder="9" locked="false" isInGroup="-1"/>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::HRule" x="132" y="274" w="877" h="-1" measuredW="100" measuredH="5" zOrder="10" locked="false" isInGroup="-1"/>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Label" x="132" y="279" w="60" h="25" measuredW="58" measuredH="23" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>12</size>
+        <text>Schedule</text>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::Label" x="213" y="278" w="47" h="25" measuredW="46" measuredH="23" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>12</size>
+        <text>Results</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::Label" x="282" y="278" w="70" h="25" measuredW="62" measuredH="23" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>12</size>
+        <text>Standings</text>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Label" x="367" y="278" w="64" h="25" measuredW="57" measuredH="23" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>12</size>
+        <text>Locations</text>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::Label" x="992" y="239" w="40" h="25" measuredW="41" measuredH="26" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>14</size>
+        <text>PARC</text>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::HRule" x="133" y="328" w="876" h="-1" measuredW="100" measuredH="5" zOrder="16" locked="false" isInGroup="-1"/>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::Label" x="133" y="333" w="127" h="23" measuredW="115" measuredH="23" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>12</size>
+        <text>New%20Club%20Requests</text>
+      </controlProperties>
+    </control>
+    <control controlID="58" controlTypeID="com.balsamiq.mockups::Label" x="447" y="278" w="83" h="25" measuredW="70" measuredH="23" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>12</size>
+        <text>Club%20Admin</text>
+      </controlProperties>
+    </control>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::Label" x="545" y="278" w="79" h="25" measuredW="69" measuredH="23" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>472931</color>
+        <size>12</size>
+        <text>Site%20Admin</text>
+      </controlProperties>
+    </control>
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::DataGrid" x="141" y="362" w="860" h="76" measuredW="584" measuredH="74" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <borderStyle>none</borderStyle>
+        <hLines>false</hLines>
+        <rowHeight>16</rowHeight>
+        <selectedIndex>-1</selectedIndex>
+        <size>10</size>
+        <text>Date%20%5E%2C%20Club%20Name%2C%20State%2C%20Applicant%20Name%2C%20RCC%20Screen%20Name%2C%20Response%0A9/15/2010%2C%20State%20Radio%20Controlled%20Rock%20Crawlers%2C%20ST%2C%20Peter%20Gun%2C%20pgcrawler%2C%20%0A9/15/2010%2C%20Atlanta%20Rock%20Crawlers%2C%20GA%2C%20John%20Mesa%2C%20Fishmaxx%2C%20Approve%20%7C%20Delcine%0A9/16/2010%2C%20Northern%20Arizona%20Rock%20Crawlers%2C%20AZ%2C%20Robert%20Youngsma%2C%20redlinerob%2C%20Approve%20%7C%20Delcine</text>
+        <vLines>false</vLines>
+      </controlProperties>
+    </control>
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::HRule" x="132" y="631" w="876" h="-1" measuredW="100" measuredH="5" zOrder="21" locked="false" isInGroup="-1"/>
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::Label" x="132" y="636" w="127" h="23" measuredW="97" measuredH="23" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>12</size>
+        <text>National%20Events</text>
+      </controlProperties>
+    </control>
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::DataGrid" x="141" y="659" w="860" h="41" measuredW="660" measuredH="40" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <borderStyle>none</borderStyle>
+        <rowHeight>16</rowHeight>
+        <selectedIndex>-1</selectedIndex>
+        <size>10</size>
+        <text>Date%20%5E%2C%20Host%20Club%2C%20Location%2C%20Event%20Name%2C%20Event%20Contact%2C%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A11/22/2010%2C%20CRCC%2C%20Red%20Rocks%20Park%2C%202010%20Vanquish%20Products%20La%20Guerra%20en%20Rocas%20Rojo%20Numero%20Dos%2C%20Guy%20Name%20%28turtle%29%2C%20%20%20%20%20%20%20%20%20%20</text>
+        <vLines>false</vLines>
+      </controlProperties>
+    </control>
+    <control controlID="68" controlTypeID="com.balsamiq.mockups::HRule" x="132" y="477" w="876" h="-1" measuredW="100" measuredH="5" zOrder="24" locked="false" isInGroup="-1"/>
+    <control controlID="69" controlTypeID="com.balsamiq.mockups::Label" x="132" y="482" w="127" h="23" measuredW="64" measuredH="23" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>12</size>
+        <text>Site%20News</text>
+      </controlProperties>
+    </control>
+    <control controlID="70" controlTypeID="com.balsamiq.mockups::DataGrid" x="141" y="505" w="860" h="75" measuredW="595" measuredH="80" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <borderStyle>none</borderStyle>
+        <rowHeight>26</rowHeight>
+        <selectedIndex>-1</selectedIndex>
+        <size>10</size>
+        <text>Effective%20Date%20%5E%2C%20Expiration%20Date%2C%20Message%2C%20%0A9/12/2010%2C%2010/10/2010%2C%20Congratulations%20to%20all%20who%20participated%20in%20the%202010%20USRCCA%20Nationals%20%5Crat%20Disney%20OK.%20Check%20the%20%3Cresults%3E.%2C%20%0A9/1/2010%2C%2012/31/2010%2C%20ProgressTen.com%20is%20LIVE%21%2C%20Edit%20%7C%20Delete</text>
+        <vLines>false</vLines>
+      </controlProperties>
+    </control>
+    <control controlID="73" controlTypeID="com.balsamiq.mockups::Link" x="142" y="586" w="-1" h="-1" measuredW="71" measuredH="20" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>New%20Message</text>
+      </controlProperties>
+    </control>
+    <control controlID="75" controlTypeID="com.balsamiq.mockups::Link" x="141" y="706" w="-1" h="-1" measuredW="57" measuredH="20" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>New%20Event</text>
+      </controlProperties>
+    </control>
+    <control controlID="76" controlTypeID="com.balsamiq.mockups::Link" x="841" y="381" w="-1" h="-1" measuredW="41" measuredH="20" zOrder="29" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <size>10</size>
+        <text>Approve</text>
+      </controlProperties>
+    </control>
+    <control controlID="77" controlTypeID="com.balsamiq.mockups::Link" x="887" y="381" w="-1" h="-1" measuredW="42" measuredH="20" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <size>10</size>
+        <text>Decline</text>
+      </controlProperties>
+    </control>
+    <control controlID="78" controlTypeID="com.balsamiq.mockups::Link" x="881" y="530" w="-1" h="-1" measuredW="26" measuredH="20" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <size>10</size>
+        <text>Edit</text>
+      </controlProperties>
+    </control>
+    <control controlID="79" controlTypeID="com.balsamiq.mockups::Link" x="911" y="530" w="-1" h="-1" measuredW="37" measuredH="20" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <size>10</size>
+        <text>Delete</text>
+      </controlProperties>
+    </control>
+    <control controlID="80" controlTypeID="com.balsamiq.mockups::Link" x="927" y="679" w="-1" h="-1" measuredW="26" measuredH="20" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <size>10</size>
+        <text>Edit</text>
+      </controlProperties>
+    </control>
+    <control controlID="81" controlTypeID="com.balsamiq.mockups::Link" x="957" y="679" w="-1" h="-1" measuredW="37" measuredH="20" zOrder="34" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <size>10</size>
+        <text>Delete</text>
+      </controlProperties>
+    </control>
+    <control controlID="82" controlTypeID="com.balsamiq.mockups::Canvas" x="54" y="94" w="1045" h="718" measuredW="100" measuredH="70" zOrder="35" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.5</backgroundAlpha>
+        <borderStyle>none</borderStyle>
+        <color>0</color>
+      </controlProperties>
+    </control>
+    <control controlID="83" controlTypeID="com.balsamiq.mockups::TitleWindow" x="267" y="175" w="607" h="587" measuredW="450" measuredH="400" zOrder="36" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bottomheight>0</bottomheight>
+        <close>true</close>
+        <dragger>false</dragger>
+        <maximizeRestore>false</maximizeRestore>
+        <minimize>false</minimize>
+        <text>Approve%20New%20Club</text>
+      </controlProperties>
+    </control>
+    <control controlID="84" controlTypeID="com.balsamiq.mockups::HRule" x="323" y="218" w="496" h="-1" measuredW="100" measuredH="5" zOrder="37" locked="false" isInGroup="-1"/>
+    <control controlID="85" controlTypeID="com.balsamiq.mockups::Label" x="323" y="218" w="-1" h="-1" measuredW="86" measuredH="23" zOrder="38" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>12</size>
+        <text>Email%20Message</text>
+      </controlProperties>
+    </control>
+    <control controlID="95" controlTypeID="com.balsamiq.mockups::Label" x="352" y="247" w="16" h="20" measuredW="16" measuredH="20" zOrder="39" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>To</text>
+      </controlProperties>
+    </control>
+    <control controlID="96" controlTypeID="com.balsamiq.mockups::Label" x="352" y="261" w="142" h="20" measuredW="142" measuredH="20" zOrder="40" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Peter%20Gun%20%28pgun@email.com%29</text>
+      </controlProperties>
+    </control>
+    <control controlID="97" controlTypeID="com.balsamiq.mockups::Label" x="352" y="287" w="30" h="20" measuredW="30" measuredH="20" zOrder="41" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>From</text>
+      </controlProperties>
+    </control>
+    <control controlID="98" controlTypeID="com.balsamiq.mockups::Label" x="352" y="301" w="159" h="20" measuredW="159" measuredH="20" zOrder="42" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>ProgressTen.com%20Administrator</text>
+      </controlProperties>
+    </control>
+    <control controlID="99" controlTypeID="com.balsamiq.mockups::Label" x="352" y="338" w="42" h="20" measuredW="42" measuredH="20" zOrder="43" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Subject</text>
+      </controlProperties>
+    </control>
+    <control controlID="100" controlTypeID="com.balsamiq.mockups::Label" x="352" y="352" w="140" h="20" measuredW="140" measuredH="20" zOrder="44" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Welcome%20to%20PrgressTen.com</text>
+      </controlProperties>
+    </control>
+    <control controlID="101" controlTypeID="com.balsamiq.mockups::Label" x="352" y="388" w="47" h="20" measuredW="47" measuredH="20" zOrder="45" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Message</text>
+      </controlProperties>
+    </control>
+    <control controlID="102" controlTypeID="com.balsamiq.mockups::TextArea" x="353" y="408" w="436" h="298" measuredW="200" measuredH="140" zOrder="46" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Welcome%20Peter%2C%0A%20%0AWe%20are%20happy%20to%20announce%20that%20your%20club%20has%20been%20added%20to%20the%20USRCCA%20family%20of%20clubs%20that%20are%20part%20of%20ProgressTen.com.%20You%20man%20now%20login%20and%20start%20enjoying%20the%20features%20and%20benefits%20of%20managing%20your%20club%20and%20competitions%20available%20on%20our%20site.%0A%20%0ASee%20our%20Help%20pages%20for%20guides%20and%20How%20To%27s%20to%20get%20your%20club%20running%20on%20our%20site.%0A%20%0AIf%20you%20have%20any%20problems%20at%20ProgressTen.com%2C%20do%20not%20hesitate%20to%20contact%20us%2C%20either%20through%20our%20Contact%20page%2C%20or%20by%20emailing%20help@progressten.com.%20%0A%20%0AThank%20you%0AProgressTen.com</text>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="103" controlTypeID="com.balsamiq.mockups::StickyNote" x="1150" y="222" w="197" h="149" measuredW="109" measuredH="123" zOrder="47" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Message%20can%20be%20edited%20if%20there%20is%20something%20we%20want%20to%20say</text>
+      </controlProperties>
+    </control>
+    <control controlID="104" controlTypeID="com.balsamiq.mockups::Arrow" x="583" y="287" w="555" h="171" measuredW="150" measuredH="100" zOrder="48" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13576743</color>
+        <curvature>1</curvature>
+        <direction>bottom</direction>
+        <leftArrow>true</leftArrow>
+        <rightArrow>false</rightArrow>
+      </controlProperties>
+    </control>
+    <control controlID="105" controlTypeID="com.balsamiq.mockups::Button" x="538" y="715" w="66" h="28" measuredW="55" measuredH="28" zOrder="49" locked="false" isInGroup="-1">
+      <controlProperties>
+        <href>_SiteAdmin%26bm%3B_SiteAdmin.bmml%26bm%3B_SiteAdmin.bmml%26bm%3B_SiteAdmin.bmml</href>
+        <map>%3Carea%20shape%3D%22rect%22%20coords%3D%22490%2C689%2C556%2C717%22%20href%3D%22_SiteAdmin.bmml%22%20alt%3D%22_SiteAdmin%22%20id%3D%22105%22/%3E</map>
+        <text>Send</text>
+      </controlProperties>
+    </control>
+    <control controlID="106" controlTypeID="com.balsamiq.mockups::StickyNote" x="1182" y="482" w="255" h="197" measuredW="109" measuredH="123" zOrder="50" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Changes%20%22Approved%22%20flag%20to%20true%0A%20%0AAutomatcally%20adds%20Site%20Message%20announcing%20new%20club</text>
+      </controlProperties>
+    </control>
+    <control controlID="107" controlTypeID="com.balsamiq.mockups::Arrow" x="615" y="547" w="555" h="171" measuredW="150" measuredH="100" zOrder="51" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13576743</color>
+        <curvature>1</curvature>
+        <direction>bottom</direction>
+        <leftArrow>true</leftArrow>
+        <rightArrow>false</rightArrow>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
