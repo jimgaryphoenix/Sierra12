@@ -1,6 +1,0 @@
-﻿
-	<div class="span-21 append-1 last headerBarText">
-		!{Html.TabbedMenu(new List[[ProgressTen.Infrastructure.ViewModels.MenuTab]] { 
-			MenuTab.Create("Logout", "Logout", "Site", "")
-		})}
-	</div>

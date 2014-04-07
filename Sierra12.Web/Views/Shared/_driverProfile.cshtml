@@ -1,0 +1,91 @@
+﻿
+@inherits System.Web.Mvc.WebViewPage<ProgressTen.Infrastructure.ViewModels.DisplayClubViewModel>
+
+<div class="span-21 last">
+
+	<div class="span-4">&nbsp;</div>
+
+	<div class="span-12 last coverBar">
+
+		<h4>Driver Profile, @Model.Driver.FullDisplayName</h4>
+
+		<div class="span-4 alignRight">
+			First Name:
+		</div>
+
+		<div class="span-8 last">
+			@Model.Driver.FirstName
+		</div>
+
+		<div class="span-4 alignRight">
+			Last Name:
+		</div>
+
+		<div class="span-8 last">
+			@Model.Driver.LastName
+		</div>
+
+		<div class="span-4 alignRight">
+			Rcc ScreenName:
+		</div>
+
+		<div class="span-8 last">
+			@Model.Driver.RccScreenName
+		</div>
+
+		<div class="span-4 alignRight">
+			Email Address:
+		</div>
+
+		<div class="span-8 last">
+			@Model.Driver.EmailAddress
+		</div>
+
+		<div class="span-4 alignRight">
+			Home Club:
+		</div>
+
+		<div class="span-8 last">
+			@(Model.Driver.HomeClub != null ? Model.Driver.HomeClub.FullName : "Not Afilliated")
+		</div>
+
+		<div class="span-4 alignRight">
+			City:
+		</div>
+
+		<div class="span-8 last">
+			@Model.Driver.City
+		</div>
+
+		<div class="span-4 alignRight">
+			State:
+		</div>
+
+		<div class="span-8 last">
+			@Model.Driver.State
+		</div>
+
+		<div class="span-12 last">&nbsp;</div>
+
+		<div class="span-4 alignRight">
+			&nbsp;
+		</div>
+
+		<div class="span-8 last">
+			<a href="@("http://" + Request.Url.Authority + "/Driver/Edit/" + Model.Driver.DriverId + "/Club/" + Model.Driver.HomeClub.ClubId)">Edit Profile</a>
+		</div>
+
+		<div class="span-12 last">&nbsp;</div>
+
+		<div class="span-4 alignRight">
+			&nbsp;
+		</div>
+
+		<div class="span-8 last">
+			<a href="@("http://" + Request.Url.Authority + "/Driver/ChangePassword/" + Model.Driver.DriverId)">Change Password</a>
+		</div>
+
+	</div>
+
+	<div class="span-20 last">&nbsp;</div>
+</div>

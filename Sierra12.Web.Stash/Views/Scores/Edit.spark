@@ -1,0 +1,78 @@
+﻿
+
+<viewdata model="EditScoresViewModel" />
+
+<content name="menu">
+	<logoutMenu />
+</content>
+
+<div class="span-2">&nbsp;</div>
+<div class="span-18 coverBar">
+
+	<h3>Edit Scores</h3>
+
+	<div class="span-18 last headerRow center">
+		${Model.Result.Driver.FullName} (${Model.Result.Driver.RccScreenName})
+	</div>
+
+	<div class="span-18 last">&nbsp;</div>
+
+	<div class="span-18 last headerRow center">${Model.Result.Class.Name}</div>
+
+	<div class="span-18 last">&nbsp;</div>
+
+	<div class="span-18 last">
+
+		<form action="Edit" method="post">
+
+			<input type="hidden" name="eventId" value="${Model.Result.Event.EventId}" />
+			<input type="hidden" name="driverId" value="${Model.Result.Driver.DriverId}" />
+			<input type="hidden" name="classId" value="${Model.Result.Class.ClassId}" />
+
+			<table class="ScoreGrid">
+				<tr>
+					<td class="headerRow">
+						Course 1
+					</td>
+					<td class="headerRow">
+						Course 2
+					</td>
+					<td class="headerRow">
+						Course 3
+					</td>
+					<td class="headerRow">
+						Course 4
+					</td>
+					<td class="headerRow">
+						Course 5
+					</td>
+					<td class="headerRow">
+						Finals
+					</td>
+				</tr>
+				<tr>
+					<td each="var score in Model.Result.Scores">
+						<input type="text" name="Course_${score.CourseNumber}" class="scoreBox" value="${score.CourseScore}" />
+					</td>
+				</tr>
+			</table>
+
+			<div class="span-18 last">&nbsp;</div>
+
+			<div class="span-18 last center">
+				<input type="submit" value="Submit" />
+			</div>
+
+			<div class="span-18 last center">&nbsp;</div>
+
+			<div class="span-18 last center">
+				!{Html.ValidationMessageFor(m => m.ErrorMessage)}
+			</div>
+
+		</form>
+
+	</div>
+
+</div>
+
+<div class="span-4 last">&nbsp;</div>
