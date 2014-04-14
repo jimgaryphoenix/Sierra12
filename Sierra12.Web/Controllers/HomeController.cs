@@ -10,7 +10,7 @@ namespace ProgressTen.Web.Controllers
 	{
 		public ActionResult Index()
 		{
-			return View("Index", new LoginViewModel());
+			return View("Index");
 		}
 	}
 }

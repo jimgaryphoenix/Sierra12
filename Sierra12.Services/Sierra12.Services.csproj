@@ -60,15 +60,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProgressTen.Domain\ProgressTen.Domain.csproj">
+    <ProjectReference Include="..\Sierra12.Domain\Sierra12.Domain.csproj">
       <Project>{5717F926-20AD-4954-BE46-C39650CC3428}</Project>
       <Name>ProgressTen.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ProgressTen.Infrastructure\ProgressTen.Infrastructure.csproj">
+    <ProjectReference Include="..\Sierra12.Infrastructure\Sierra12.Infrastructure.csproj">
       <Project>{5C5FD91D-4376-498F-BFAF-1A9523FED244}</Project>
       <Name>ProgressTen.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ProgressTen.Repository\ProgressTen.Repository.csproj">
+    <ProjectReference Include="..\Sierra12.Repository\Sierra12.Repository.csproj">
       <Project>{F5888E58-CCDD-4AF0-BE83-45B9AEF504F1}</Project>
       <Name>ProgressTen.Repository</Name>
     </ProjectReference>

@@ -89,16 +89,8 @@
     <Compile Include="ActionFilters\UserIsClubAdminAttribute.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
-    <Compile Include="Controllers\ClubController.cs" />
     <Compile Include="Controllers\AjaxController.cs" />
-    <Compile Include="Controllers\SeriesController.cs" />
-    <Compile Include="Controllers\LocationController.cs" />
-    <Compile Include="Controllers\DriverController.cs" />
-    <Compile Include="Controllers\EventController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\NationalsController.cs" />
-    <Compile Include="Controllers\ResultController.cs" />
-    <Compile Include="Controllers\ScoreController.cs" />
     <Compile Include="Controllers\SiteController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -130,12 +122,19 @@
     <Content Include="Content\CSS\print.css" />
     <Content Include="Content\CSS\screen.css" />
     <Content Include="Content\CSS\Site.css" />
-    <Content Include="Content\Images\headerBarBg.png" />
-    <Content Include="Content\Images\headerCrawler.png" />
-    <Content Include="Content\Images\HeaderLogo.png" />
-    <Content Include="Content\Images\NationalLogos\1.jpg" />
-    <Content Include="Content\Images\sharp_arch.jpg" />
-    <Content Include="Content\Images\sharp_arch_small.gif" />
+    <Content Include="Content\Images\divider.png" />
+    <Content Include="Content\Images\favicon.ico" />
+    <Content Include="Content\Images\FiringLine.JPG" />
+    <Content Include="Content\Images\header_bar.png" />
+    <Content Include="Content\Images\icon_menu.png" />
+    <Content Include="Content\Images\JimAndJason.JPG" />
+    <Content Include="Content\Images\latin_01.png" />
+    <Content Include="Content\Images\logo_main.png" />
+    <Content Include="Content\Images\logo_onecolor.png" />
+    <Content Include="Content\Images\logo_simple.png" />
+    <Content Include="Content\Images\logo_small.png" />
+    <Content Include="Content\Images\logo_twocolor.png" />
+    <Content Include="Content\Images\OneOnOne.JPG" />
     <Content Include="Content\Scripts\jquery-1.4.2.js" />
     <Content Include="Content\Scripts\jquery-1.4.2.min.js" />
     <Content Include="Content\Scripts\jquery-1.5.1-vsdoc.js" />
@@ -186,49 +185,13 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Driver\Add.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Event\Index.cshtml">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="Views\Club\Index.cshtml" />
-    <Content Include="Views\Club\Register.cshtml" />
-    <Content Include="Views\Club\RegisterSuccess.cshtml" />
-    <Content Include="Views\Driver\RegisterSuccess.cshtml" />
-    <Content Include="Views\Driver\Register.cshtml" />
-    <Content Include="Views\Club\Guest.cshtml" />
-    <Content Include="Views\Series\Add.cshtml" />
-    <Content Include="Views\Series\Edit.cshtml" />
-    <Content Include="Views\Event\Add.cshtml" />
-    <Content Include="Views\Event\Edit.cshtml" />
-    <Content Include="Views\Driver\Edit.cshtml" />
-    <Content Include="Views\Driver\ChangePassword.cshtml" />
-    <Content Include="Views\Driver\ChangePasswordSuccess.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Shared\_openMenu.cshtml" />
     <Content Include="Views\Shared\_footer.cshtml">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="Views\Shared\_logoutMenu.cshtml">
-      <SubType>Code</SubType>
-    </Content>
-    <Content Include="Views\Nationals\Index.cshtml" />
-    <Content Include="Views\Result\Edit.cshtml" />
-    <Content Include="Views\Location\Add.cshtml" />
-    <Content Include="Views\Location\Edit.cshtml" />
-    <Content Include="Views\Score\Edit.cshtml" />
-    <Content Include="Views\Shared\_schedule.cshtml" />
-    <Content Include="Views\Shared\_clubManagement.cshtml" />
-    <Content Include="Views\Shared\_driverManagement.cshtml" />
-    <Content Include="Views\Shared\_locations.cshtml" />
-    <Content Include="Views\Shared\_results.cshtml" />
-    <Content Include="Views\Score\Add.cshtml" />
-    <Content Include="Views\Shared\_driverProfile.cshtml" />
-    <Content Include="Views\Shared\_standings.cshtml" />
     <Content Include="Views\Site\About.cshtml" />
     <Content Include="Views\Site\Contact.cshtml" />
     <Content Include="Views\Site\ContactSuccess.cshtml" />
@@ -237,15 +200,15 @@
     <Content Include="Views\Site\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProgressTen.Domain\ProgressTen.Domain.csproj">
+    <ProjectReference Include="..\Sierra12.Domain\Sierra12.Domain.csproj">
       <Project>{5717F926-20AD-4954-BE46-C39650CC3428}</Project>
       <Name>ProgressTen.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ProgressTen.Infrastructure\ProgressTen.Infrastructure.csproj">
+    <ProjectReference Include="..\Sierra12.Infrastructure\Sierra12.Infrastructure.csproj">
       <Project>{5C5FD91D-4376-498F-BFAF-1A9523FED244}</Project>
       <Name>ProgressTen.Infrastructure</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ProgressTen.Services\ProgressTen.Services.csproj">
+    <ProjectReference Include="..\Sierra12.Services\Sierra12.Services.csproj">
       <Project>{C4294606-F731-4C8F-8A4D-ED1F278F6509}</Project>
       <Name>ProgressTen.Services</Name>
     </ProjectReference>
@@ -272,7 +235,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>5099</DevelopmentServerPort>
+          <DevelopmentServerPort>35540</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

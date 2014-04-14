@@ -1,11 +1,11 @@
 ﻿
 @{
-	ViewBag.Title = "ProgressTen - Home";
+	ViewBag.Title = "Sierra12 - Home";
 }
 
-@section Menu{
+@*@section Menu{
 	@Html.Partial("_openMenu")
-}
+}*@
 
 <script src="@("http://" + Request.Url.Authority + "/Content/Scripts/jquery.ui.core.js")" type="text/javascript"></script>
 <script src="@("http://" + Request.Url.Authority + "/Content/Scripts/jquery.ui.position.js")" type="text/javascript"></script>
@@ -14,32 +14,73 @@
 
 <script type="text/javascript" language="javascript">
 
-	$(document).ready(function () {
-		$("#clubName").autocomplete({
-			minLength: 2,
-			source: function (request, response) {
-				
-				$.ajax({
-					url: "http://" + document.location.host + "/Ajax/GetClubSuggest",
-					type: "POST",
-					dataType: "json",
-					data: { searchText: request.term },
-					success: function (data) {
-						response($.map(data, function (item) {
-							return { label: item.DisplayName, value: item.DisplayName, id: item.ClubId }
-						}))
-					}
-				})
-			},
-			select: function (event, ui) {
-				document.location = "http://" + document.location.host + "/Club/" + ui.item.id;
-			}
-		});
-	});
+//	$(document).ready(function () {
+//		$("#clubName").autocomplete({
+//			minLength: 2,
+//			source: function (request, response) {
+//				
+//				$.ajax({
+//					url: "http://" + document.location.host + "/Ajax/GetClubSuggest",
+//					type: "POST",
+//					dataType: "json",
+//					data: { searchText: request.term },
+//					success: function (data) {
+//						response($.map(data, function (item) {
+//							return { label: item.DisplayName, value: item.DisplayName, id: item.ClubId }
+//						}))
+//					}
+//				})
+//			},
+//			select: function (event, ui) {
+//				document.location = "http://" + document.location.host + "/Club/" + ui.item.id;
+//			}
+//		});
+//	});
 
 </script>
 
-<div class="span-3">&nbsp;</div>
+<div class="pageTitle">
+	Welcome
+</div>
+
+<div class="titleDivider"></div>
+
+@*<div class="contentTable">
+	<div class="contentTableRow">*@
+		<div class="leftImage">
+			<img src="../../Content/Images/JimAndJason.JPG" alt="Jim and Jason fielding questions on the range" />
+		</div>
+
+		<div class="rightText">
+			Welcome to Sierra12 Defensive Studies Group. The southwest’s newest defensive training company. Located in Phoenix, Arizona 
+			we offer firearms and survival training for the defense of yourself, your family, and your community. We specialize in 
+			teaching in progression from basic firearms safety and handling, through advanced combat marksmanship and reaction to 
+			hostile actions, culminating in small unit security patrolling.
+
+			<h4>What’s In A Name?</h4>
+			The UTM navigational grid system divides the world into alpha-numeric sections. The section S12 is made up almost entirely of 
+			Arizona and all of Arizona sits in S12.  We chose this name because we are Arizonans and we teach in Arizona for survival and 
+			defense techniques specific to Arizona’s mountains and deserts. 
+
+			<h4>What We Teach</h4>
+			We offer a full line of classes that are designed to take a student from a beginning shooter through having the skill and 
+			ability to defend your community as a part of a team, working in mutual support. While our basic rifle and pistol classes 
+			are the traditional firearms training that teach the beginning shooter the proper methods of safe and effective weapon 
+			handling and operation, our advanced classes take the shooter beyond traditional, competition-based rifle and pistol training. 
+			The skills we teach are based on decades-old, proven infantry combat techniques, adapted to the application of the civilian 
+			who might find themselves in a hostile situation. 
+
+			<h4>Who We Are</h4>
+			Sierra12 is run by combat veterans who know what works and what doesn’t and are able help guide our students through the noise 
+			of this crowded market of tactics and equipment. We know that most of our students are not military or combat veterans and 
+			strive to cut through the labyrinth of military jargon and acronyms. We keep our content focussed on the context of civilian 
+			defensive needs and probable scenarios of a survival situation. Sierra12 is values family, community and team over all else. 
+			We raise the team by raising each individual to be a better member of their team.
+		</div>
+	@*</div>
+</div>*@
+
+@*<div class="span-3">&nbsp;</div>
 
 <div class="span-16">
 
@@ -73,4 +114,4 @@
 
 </div>
 
-<div class="span-5 last">&nbsp;</div>
+<div class="span-5 last">&nbsp;</div>*@

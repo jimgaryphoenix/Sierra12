@@ -50,11 +50,11 @@
     <Compile Include="TieBreakerTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProgressTen.Domain\ProgressTen.Domain.csproj">
+    <ProjectReference Include="..\Sierra12.Domain\Sierra12.Domain.csproj">
       <Project>{5717F926-20AD-4954-BE46-C39650CC3428}</Project>
       <Name>ProgressTen.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ProgressTen.Services\ProgressTen.Services.csproj">
+    <ProjectReference Include="..\Sierra12.Services\Sierra12.Services.csproj">
       <Project>{C4294606-F731-4C8F-8A4D-ED1F278F6509}</Project>
       <Name>ProgressTen.Services</Name>
     </ProjectReference>

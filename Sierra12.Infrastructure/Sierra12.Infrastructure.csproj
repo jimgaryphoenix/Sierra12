@@ -58,7 +58,6 @@
     <Compile Include="ViewModels\AccountModels.cs" />
     <Compile Include="ViewModels\ContactViewModel.cs" />
     <Compile Include="ViewModels\ChangePasswordViewModel.cs" />
-    <Compile Include="ViewModels\ClubViewModel.cs" />
     <Compile Include="ViewModels\StandingsItemViewModel.cs" />
     <Compile Include="ViewModels\StandingsGroupViewModel.cs" />
     <Compile Include="ViewModels\StandingsViewModel.cs" />
@@ -77,7 +76,7 @@
     <Compile Include="ViewModels\MenuTab.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProgressTen.Domain\ProgressTen.Domain.csproj">
+    <ProjectReference Include="..\Sierra12.Domain\Sierra12.Domain.csproj">
       <Project>{5717F926-20AD-4954-BE46-C39650CC3428}</Project>
       <Name>ProgressTen.Domain</Name>
     </ProjectReference>

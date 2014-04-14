@@ -5,7 +5,9 @@
 <head id="Head1" runat="server">
 	<title>@ViewBag.Title</title>
 
-    <link href="@("http://" + Request.Url.Authority + "/Content/Css/Screen.css")" rel="stylesheet" type="text/css" media="screen" />
+	
+
+    @*<link href="@("http://" + Request.Url.Authority + "/Content/Css/Screen.css")" rel="stylesheet" type="text/css" media="screen" />*@
     <link href="@("http://" + Request.Url.Authority + "/Content/Css/Print.css")" rel="stylesheet" type="text/css" media="print" />
     <!--[if lt IE 8]><link href="../../Content/Css/Ie.css" rel="stylesheet" type="text/css" /><![endif]-->
     <link href="@("http://" + Request.Url.Authority + "/Content/Css/Site.css")" rel="stylesheet" type="text/css" />
@@ -18,58 +20,46 @@
 
 <script language="javascript" type="text/javascript">
 
-    $(document).ready(function () {
-    	$("#HomeLink").hover(mouseOn, mouseOff);
-    	$("#HomeLink").click(function () { window.location = "http://@(ViewBag.UrlAuthority)"; });
-    });
+//	$(document).ready(function () {
+//		$("#menuIconItem").click(function () {
+//			$("#openMenuItem").show();
+//		});
 
-    function mouseOn() {
-    	$("#HomeLink").addClass("homeHover");
-    }
-
-    function mouseOff() {
-    	$("#HomeLink").removeClass("homeHover");
-    }
+//		$("#menuContainerItem").mouseout(function () {
+//			$("#openMenu").hide();
+//		});
+//	});
 
 </script>
 
 <body>
     <div class="page">
-
-        <div class="container mainContent">
         
-            <div class="span-24 last">
-                <div class="span-1">&nbsp;</div>
-                <div class="span-10 headerLeft" id="HomeLink">&nbsp;</div>
-                <div class="span-13 last headerRight">&nbsp;</div>
+            <div class="header">
+				<div class="headerLatin"></div>
+				<div class="headerLogo"></div>
+				@*<div id="menuContainerItem" class="menuContainer">
+					<span class="menuTitle">Menu</span>
+					<div id="menuIconItem" class="menuIcon"></div>
+					<div>
+						<ul id="openMenuItem" class="openMenu">
+							<li>Articles</li>
+							<li>Classes</li>
+							<li>About</li>
+							<li>Contact</li>
+						</ul>
+					</div>
+				</div>*@
             </div>
             
-            <div class="span-1">&nbsp;</div>
-
-            <div class="span-24 headerBar">
-				@RenderSection("Menu", false)
+            <div class="">
+				@RenderBody()
             </div>
-            
-            <div class="span-24 last mainViewArea mainHeight">
-                @*<div class="span-1">&nbsp;</div>
-                <div class="span-22">*@
-                    @RenderBody()
-                @*</div>
-                <div class="span-1 last">&nbsp;</div>*@
+			
+        
+            <div class="footer">
+				
             </div>
-
-            <div class="span-24 last">&nbsp;</div>
-
-            @*<div class="span-1">&nbsp;</div>*@
-            @*<div class="prepend-6 span-10 append-6 footer">*@
-            <div class="span-24 last footer">
-                @Html.Partial("_footer")
-            </div>
-            @*<div class="span-1 last"></div>*@
-        </div>
-
-        <div>&nbsp;</div>
-        <div>&nbsp;</div>
 
     </div>
 </body>
