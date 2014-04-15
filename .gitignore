@@ -1,0 +1,15 @@
+/*.user
+*.dll
+/Sierra12.Domain/bin/Debug/ProgressTen.Domain.dll.config
+*.pdb
+*.cache
+/Sierra12.Domain/obj/Debug/Sierra12.Domain.csproj.FileListAbsolute.txt
+/Sierra12.Repository/obj/Debug
+Entities
+/Sierra12.Infrastructure/obj/Debug
+Debug
+bin
+*.crc
+*.version
+*.dat
+_ReSharper.Sierra12
