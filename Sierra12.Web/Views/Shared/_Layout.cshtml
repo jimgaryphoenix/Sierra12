@@ -20,15 +20,15 @@
 
 <script language="javascript" type="text/javascript">
 
-//	$(document).ready(function () {
-//		$("#menuIconItem").click(function () {
-//			$("#openMenuItem").show();
-//		});
+	$(document).ready(function () {
+		$("#menuIconItem").click(function () {
+			$("#openMenuItem").toggle();
+		});
 
 //		$("#menuContainerItem").mouseout(function () {
-//			$("#openMenu").hide();
+//			$("#openMenuItem").hide();
 //		});
-//	});
+	});
 
 </script>
 
@@ -38,25 +38,24 @@
             <div class="header">
 				<div class="headerLatin"></div>
 				<div class="headerLogo"></div>
-				@*<div id="menuContainerItem" class="menuContainer">
+				<div id="menuContainerItem" class="menuContainer">
 					<span class="menuTitle">Menu</span>
 					<div id="menuIconItem" class="menuIcon"></div>
 					<div>
 						<ul id="openMenuItem" class="openMenu">
-							<li>Articles</li>
-							<li>Classes</li>
+							@*<li>Articles</li>*@
+							<li>@Html.ActionLink("Classes", "Classes")</li>
 							<li>About</li>
 							<li>Contact</li>
 						</ul>
 					</div>
-				</div>*@
+				</div>
             </div>
             
             <div class="">
 				@RenderBody()
             </div>
-			
-        
+			        
             <div class="footer">
 				
             </div>

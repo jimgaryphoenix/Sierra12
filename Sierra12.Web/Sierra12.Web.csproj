@@ -128,6 +128,7 @@
     <Content Include="Content\Images\header_bar.png" />
     <Content Include="Content\Images\icon_menu.png" />
     <Content Include="Content\Images\JimAndJason.JPG" />
+    <Content Include="Content\Images\JimWithStudent.JPG" />
     <Content Include="Content\Images\latin_01.png" />
     <Content Include="Content\Images\logo_main.png" />
     <Content Include="Content\Images\logo_onecolor.png" />
@@ -192,12 +193,6 @@
     <Content Include="Views\Shared\_footer.cshtml">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="Views\Site\About.cshtml" />
-    <Content Include="Views\Site\Contact.cshtml" />
-    <Content Include="Views\Site\ContactSuccess.cshtml" />
-    <Content Include="Views\Site\Register.cshtml" />
-    <Content Include="Views\Site\Info.cshtml" />
-    <Content Include="Views\Site\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Sierra12.Domain\Sierra12.Domain.csproj">
@@ -214,8 +209,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Site\ResetPassword.cshtml" />
-    <Content Include="Views\Site\ResetPasswordSuccess.cshtml" />
+    <Content Include="Views\Home\Classes.cshtml" />
     <None Include="_maintenance.html" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

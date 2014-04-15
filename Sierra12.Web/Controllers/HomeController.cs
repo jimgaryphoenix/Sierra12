@@ -12,5 +12,10 @@ namespace ProgressTen.Web.Controllers
 		{
 			return View("Index");
 		}
+
+		public ActionResult Classes()
+		{
+			return View("Classes");
+		}
 	}
 }

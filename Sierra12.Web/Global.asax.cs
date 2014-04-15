@@ -78,11 +78,14 @@ namespace ProgressTen.Web
 										new { controller = "Club", action = "Index", clubId = UrlParameter.Optional, selectedSeriesId = UrlParameter.Optional });
 			RouteTable.Routes.MapRoute("Club_Index", "Club/{clubId}",  new {controller = "Club", action = "Index", clubId = UrlParameter.Optional});
 
-			RouteTable.Routes.MapRoute("About", "About", new { controller = "Site", action = "About" });
-			RouteTable.Routes.MapRoute("Contact", "Contact", new { controller = "Site", action = "Contact" });
-			RouteTable.Routes.MapRoute("Info", "Info", new { controller = "Site", action = "Info" });
-			RouteTable.Routes.MapRoute("Login", "Login", new { controller = "Site", action = "Login" });
-			RouteTable.Routes.MapRoute("Logout", "Logout", new { controller = "Site", action = "Logout" });
+			//RouteTable.Routes.MapRoute("Info", "Info", new { controller = "Site", action = "Info" });
+			//RouteTable.Routes.MapRoute("Login", "Login", new { controller = "Site", action = "Login" });
+
+
+
+			RouteTable.Routes.MapRoute("About", "About", new { controller = "Home", action = "About" });
+			RouteTable.Routes.MapRoute("Contact", "Contact", new { controller = "Home", action = "Contact" });
+			RouteTable.Routes.MapRoute("Classes", "Classes", new { controller = "Home", action = "Classes" });
 
 			RouteTable.Routes.MapRoute("Default", "{controller}/{action}/{id}", new { controller = "Home", action = "Index", id = UrlParameter.Optional });
 
