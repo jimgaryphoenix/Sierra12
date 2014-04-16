@@ -24,10 +24,6 @@
 		$("#menuIconItem").click(function () {
 			$("#openMenuItem").toggle();
 		});
-
-//		$("#menuContainerItem").mouseout(function () {
-//			$("#openMenuItem").hide();
-//		});
 	});
 
 </script>
@@ -45,8 +41,8 @@
 						<ul id="openMenuItem" class="openMenu">
 							@*<li>Articles</li>*@
 							<li>@Html.ActionLink("Classes", "Classes")</li>
-							<li>About</li>
-							<li>Contact</li>
+							<li>@Html.ActionLink("About", "About")</li>
+							<li>@Html.ActionLink("Contact", "Contact")</li>
 						</ul>
 					</div>
 				</div>
@@ -55,10 +51,32 @@
             <div class="">
 				@RenderBody()
             </div>
+
+			<div>&nbsp;</div>
+			<div>&nbsp;</div>
 			        
             <div class="footer">
-				
+				<table>
+					<tr>
+						<td></td>						
+						<td><a class="faceBookLink" href="http://facebook.com/sierra12dsg" target="_blank"><img src="../../Content/Images/facebookicon.jpg" /></a></td>
+						<td></td>						
+					</tr>
+					<tr>
+						<td></td>
+						<td>&nbsp;</td>
+						<td></td>						
+					</tr>
+					<tr>
+						<td>@Html.ActionLink("Classes", "Classes")</td>
+						<td>@Html.ActionLink("About", "About")</td>
+						<td>@Html.ActionLink("Contact", "Contact")</td>
+					</tr>
+				</table>
             </div>
+
+			<div>&nbsp;</div>
+			<div>&nbsp;</div>
 
     </div>
 </body>

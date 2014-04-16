@@ -123,10 +123,13 @@
     <Content Include="Content\CSS\screen.css" />
     <Content Include="Content\CSS\Site.css" />
     <Content Include="Content\Images\divider.png" />
+    <Content Include="Content\Images\facebookicon.jpg" />
     <Content Include="Content\Images\favicon.ico" />
     <Content Include="Content\Images\FiringLine.JPG" />
+    <Content Include="Content\Images\Gear.JPG" />
     <Content Include="Content\Images\header_bar.png" />
     <Content Include="Content\Images\icon_menu.png" />
+    <Content Include="Content\Images\JasonStopping.JPG" />
     <Content Include="Content\Images\JimAndJason.JPG" />
     <Content Include="Content\Images\JimWithStudent.JPG" />
     <Content Include="Content\Images\latin_01.png" />
@@ -210,6 +213,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Classes.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
     <None Include="_maintenance.html" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

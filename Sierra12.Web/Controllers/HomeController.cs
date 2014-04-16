@@ -17,5 +17,15 @@ namespace ProgressTen.Web.Controllers
 		{
 			return View("Classes");
 		}
+
+		public ActionResult About()
+		{
+			return View("About");
+		}
+
+		public ActionResult Contact()
+		{
+			return View("Contact");
+		}
 	}
 }
