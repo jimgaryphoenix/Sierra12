@@ -24,6 +24,16 @@
 		$("#menuIconItem").click(function () {
 			$("#openMenuItem").toggle();
 		});
+
+		$("#headerLogoItem").mouseover(function () {
+			$(this).css("cursor", "pointer");
+			}, function() {
+			$(this).css("cursor", "auto");
+		});
+
+		$("#headerLogoItem").click(function () {
+			window.location.href = "http://" + window.location.host;
+		});
 	});
 
 </script>
@@ -33,16 +43,16 @@
         
             <div class="header">
 				<div class="headerLatin"></div>
-				<div class="headerLogo"></div>
+				<div id="headerLogoItem" class="headerLogo"></div>
 				<div id="menuContainerItem" class="menuContainer">
 					<span class="menuTitle">Menu</span>
 					<div id="menuIconItem" class="menuIcon"></div>
 					<div>
 						<ul id="openMenuItem" class="openMenu">
-							@*<li>Articles</li>*@
-							<li>@Html.ActionLink("Classes", "Classes")</li>
-							<li>@Html.ActionLink("About", "About")</li>
-							<li>@Html.ActionLink("Contact", "Contact")</li>
+							<li>@Html.ActionLink("Home", "/", "")</li>
+							<li>@Html.ActionLink("Classes", "/", "Classes")</li>
+							<li>@Html.ActionLink("About", "About", "")</li>
+							<li>@Html.ActionLink("Contact", "Contact", "")</li>
 						</ul>
 					</div>
 				</div>
